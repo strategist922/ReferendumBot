@@ -58,7 +58,7 @@ while(Sys.Date()<"2016-06-24"){
     }
     message=paste('New Ladbrooks odds just in. Percentage likelihood for #Remain: ',percentRemain,'%, ',change,' from ',previousOdds,'% #ReferendumBot https://github.com/fredheir/referendumBot',sep='')
     print(message)
-    #tweet(message) # make sure you can see a 
+    tweet(message) # make sure you can see a 
   }else{
     print ('odds unchanged')
   }
