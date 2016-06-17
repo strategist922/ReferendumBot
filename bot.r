@@ -20,8 +20,8 @@ getLatestOdds=function(){
   or=fromJSON(dat)$odds[1] %>% fromJSON %>% extract2(1) %>% extract2(2)
   ol=fromJSON(dat)$odds[2] %>% fromJSON %>% extract2(1) %>% extract2(2)
   
-  k = or %>% str_split("/") %>% extract2(1) %>% as.numeric()
-  l = ol %>% str_split("/") %>% extract2(1) %>% as.numeric()
+  k = or %>% strsplit("/") %>% extract2(1) %>% as.numeric()
+  l = ol %>% strsplit("/") %>% extract2(1) %>% as.numeric()
   
   #Maths from http://sports.ladbrokes.com/sports-central/uk-eu-referendum/scripts/main.js
   m = 1 + round(k[1] / k[2] * 100) / 100
