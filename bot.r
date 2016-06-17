@@ -1,10 +1,9 @@
 library(httr)
 library(jsonlite)
 library(devtools)
-
-#Install twitteR
-devtools::install_github('geoffjentry/twitteR')
+library(magrittr)
 library(twitteR)
+
 apikey <- "" #API Key
 apisecret <- "" #API Secret
 token <- "" #Access Token
