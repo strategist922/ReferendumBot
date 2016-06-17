@@ -10,7 +10,8 @@ token <- "" #Access Token
 tokensecret <- "" #Access token secret
 setup_twitter_oauth(apikey, apisecret, token, tokensecret)
 
-
+#How long to wait between each update
+sleepTime=120
 
 getLatestOdds=function(){
   #'http://sports.ladbrokes.com/sports-central/uk-eu-referendum/'
@@ -62,7 +63,7 @@ while(Sys.Date()<"2016-06-24"){
     print ('odds unchanged')
   }
   #Sleep for a minute
-  Sys.sleep(60)
+  Sys.sleep(sleepTime)
 }
   
 
